@@ -6,10 +6,10 @@ $(function () {
 
 var swiper = new Swiper(".ClassSwiper", {
   centeredSlides: true,
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
   speed: 1500,
   loop: true,
   spaceBetween: 8,
