@@ -1,0 +1,132 @@
+.w-50{
+    width: 50px !important;
+}
+.h-50{
+    height: 50px !important;
+}
+
+.fs-lg-48p{
+    @include laptop{
+        font-size: 48px !important;
+    }
+}
+
+.fs-lg-18p{
+    @include laptop{
+        font-size: 18px !important;
+    }
+}
+.start-lg-0{
+    @include laptop{
+        left: 0% !important;
+        transform: translate(0, 0) !important;
+    }
+}
+.round-12p{
+    border-radius: 12px;
+}
+.rounded-top-start-24p{
+    border-top-left-radius: 24px !important;
+}
+.rounded-top-end-24p{
+    border-top-right-radius: 24px !important;
+}
+.rounded-bottom-end-24p{
+    border-bottom-right-radius: 24px !important;
+}
+.z-indext-1{
+    z-index: 1 !important;
+}
+
+.btn-hover{
+    &:hover{
+        color: black;
+        background: #fff;
+    }
+}
+.btn-hover-primary{
+    &:hover{
+        color: $primary;
+        border-color: $primary !important;
+    }
+}
+.link-hover{
+    &:hover{
+        a{
+            color: $primary;
+        }
+        
+        .border{
+            border:1px solid red;
+        }
+    }
+}
+.nav-item-hover{
+    &:hover{
+        opacity: 0.5;
+        background: $primary;
+    }
+}
+.squareRound{
+    display: none;
+    width: 32px;
+    height: 32px;
+}
+.squareRound-leftTop{
+    border-top: 2px solid $primary;
+    border-left: 2px solid $primary;
+    border-top-left-radius: 10px;
+}
+.squareRound-rightTop{
+    border-top: 2px solid $primary;
+    border-right: 2px solid $primary;
+    border-top-right-radius: 10px;
+}
+.squareRound-leftBottom{
+    border-bottom: 2px solid $primary;
+    border-left: 2px solid $primary;
+    border-bottom-left-radius: 10px;
+}
+.squareRound-rightBottom{
+    border-bottom: 2px solid $primary;
+    border-right: 2px solid $primary;
+    border-bottom-right-radius: 10px;
+}
+.squareRound-hover{
+    @include laptop{
+        &:hover {
+            .squareRound {
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+// font-size setting
+@each $name, $pixel in $grid-breakpoints{
+    @if ($pixel >= map-get($map: $grid-breakpoints, $key: sm)){
+        @media (min-width: $pixel){
+            @each $num, $value in $font-sizes {
+                .fs-#{$name}-#{$num}{
+                    font-size: $value !important;
+                }
+            }
+        }
+    }
+};
+
+//color settings
+@each $name, $pixel in $grid-breakpoints{
+    @if ($pixel >= map-get($map: $grid-breakpoints, $key: sm)){
+        @media (min-width: $pixel){
+            @each $colorname, $color in $colors {
+                .text-#{$name}-#{$colorname}{
+                    color: $color !important;
+                }
+            }
+        }
+    }
+};
+

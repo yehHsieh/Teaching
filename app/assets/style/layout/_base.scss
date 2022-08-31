@@ -1,0 +1,21 @@
+html,
+body {
+  font-family: "Azeret Mono", "Noto Sans TC", monospace, sans-serif;
+}
+
+img{
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+ul, li, p, a{
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
