@@ -44,7 +44,7 @@ current: index
         <!-- card -->
         <!-- <ul class="cardArea text-center"> -->
           <div class="col-lg-3">
-            <li class="mt-4 mt-lg-0">
+            <li class="mt-4 mt-lg-0 rounded-2 card-body-hover">
               <div class="card border-0 bg-bg-dark">
                 <div class="card-body py-7">
                   <span class="material-symbols-outlined gradient-text-custom text-lg-white w-50 h-50 mb-4 fs-48p">
@@ -58,7 +58,7 @@ current: index
             </li>
           </div>  
           <div class="col-lg-3">
-            <li class="mt-4 mt-lg-0">
+            <li class="mt-4 mt-lg-0 rounded-2 card-body-hover">
               <div class="card border-0 bg-bg-dark">
                 <div class="card-body py-7">
                   <span class="material-symbols-outlined gradient-text-custom text-lg-white w-50 h-50 mb-4">
@@ -75,7 +75,7 @@ current: index
           </div>
           
           <div class="col-lg-3">
-            <li class="mt-4 mt-lg-0">
+            <li class="mt-4 mt-lg-0 rounded-2 card-body-hover">
               <div class="card border-0 bg-bg-dark">
                 <div class="card-body py-7">
                   <span class="material-symbols-outlined gradient-text-custom text-lg-white w-50 h-50 mb-4 fs-48p">
@@ -326,7 +326,14 @@ current: index
         </li>
       </div>
       
-      <div class="col-lg-4 position-relative">
+      <div class="col-lg-4 position-relative squareRound-hover">
+        <!-- squareRound -->
+        <div class="squareRound squareRound-leftTop position-absolute top-0 start-0 squareRound-hover"></div>
+        <div class="squareRound squareRound-rightTop position-absolute top-0 end-0 squareRound-hover"></div>
+        <div class="squareRound squareRound-leftBottom position-absolute bottom-0 start-0 squareRound-hover"></div>
+        <div class="squareRound squareRound-rightBottom position-absolute bottom-0 end-0 squareRound-hover"></div> 
+        <!-- squareRound-end-->
+
         <li class="mb-4 p-lg-4 mb-lg-0">
           <img src="assets/images/week6-202207/article02.jpg" alt="article02">
           <h3 class="py-3 m-0 fs-18p fw-bold">軟體工程師有哪些類別</h3>
@@ -335,8 +342,15 @@ current: index
         </li>
       </div>
       
-      <div class="col-lg-4 position-relative">
-        <li class="p-lg-4">
+      <div class="col-lg-4 position-relative squareRound-hover">
+        <!-- squareRound -->
+        <div class="squareRound squareRound-leftTop position-absolute top-0 start-0 squareRound-hover"></div>
+        <div class="squareRound squareRound-rightTop position-absolute top-0 end-0 squareRound-hover"></div>
+        <div class="squareRound squareRound-leftBottom position-absolute bottom-0 start-0 squareRound-hover"></div>
+        <div class="squareRound squareRound-rightBottom position-absolute bottom-0 end-0 squareRound-hover"></div> 
+        <!-- squareRound-end-->
+
+        <li class="mb-4 p-lg-4 mb-lg-0">
           <img src="assets/images/week6-202207/article03.jpg" alt="article03">
           <h3 class="py-3 m-0 fs-18p fw-bold">免費 25 小時前端教學資源</h3>
           <P class="mb-3">這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程</P>
@@ -359,21 +373,21 @@ current: index
     </div>
     <div class="row justify-content-center align-items-center">
       <div class="col">
-        <div class="swiper abilitySwiper">
+        <div class="swiper abilitySwiper position-relative overflow-visible">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide d-lg-flex justify-content-center">
+            <div class="swiper-slide  d-lg-flex justify-content-center">
               <div class="col-lg-5">
                 <div class="sharePic ps-1 position-relative">
                   <img class="rounded-3" src="assets/images/week6-202207/share.jpg" alt="share">
                 </div>
               </div>
-              <div class="col-lg-4 align-self-lg-end" style="margin-left:-30px; margin-bottom:-48px;">
-                <div class="bg-white py-4 mt-45p mb-5 px-4 position-relative rounded-top-start-24p rounded-top-end-24p rounded-bottom-end-24p">
+              <div class="col-lg-4 align-self-lg-end">
+                <div class="bg-white py-4 mt-45p mb-5 px-4 position-relative rounded-top-start-24p rounded-top-end-24p rounded-bottom-end-24p" style="margin-left: -43px; padding-bottom: -32px;">
                   <h3 class="text-bg-light fs-18p fw-bold">老師很有耐心</h3>
                   <p class="text-bg-light">老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
-                  <img class="rounded-circle position-absolute student" src="assets/images/week6-202207/student01.jpg" alt="student01" style="width: 80px; height: 80px;">
+                  <img class="rounded-circle position-absolute student" src="assets/images/week6-202207/student01.jpg" alt="student03" style="width: 80px; height: 80px;">
                 </div>
-              </div>      
+              </div>
             </div>
 
             <div class="swiper-slide  d-lg-flex justify-content-center">
@@ -422,12 +436,12 @@ current: index
               
             </div>
           </div>
-
+<!-- pagination -->
           <div class="lg-container">
             <div class="lg-row gx-lg-3">
               <div class="col-lg-2">
                 <div class="position-relative d-flex justify-content-center">
-                  <div class="swiper-button-prev top-0 start-30">
+                  <div class="swiper-button-prev top-0 start-30 ">
                     <span class="material-icons text-primary">
                       arrow_back
                     </span>
@@ -442,7 +456,7 @@ current: index
               </div>
             </div>
           </div>
-          
+<!-- end -->
         </div>
       </div>
     </div>
