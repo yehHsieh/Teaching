@@ -27,9 +27,6 @@ var swiper = new Swiper('.abilitySwiper', {
   // Optional parameters
   effect: 'fade',
   loop: true,
-  fadeEffect: {
-    crossFade: true
-  },
   
   // If we need pagination
   pagination: {
@@ -39,8 +36,8 @@ var swiper = new Swiper('.abilitySwiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.material-icons',
-    prevEl: '.material-icons',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
 
