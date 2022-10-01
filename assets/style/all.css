@@ -17059,6 +17059,10 @@ ul, li, p, a {
   height: 50px !important;
 }
 
+.bottom_-5 {
+  bottom: -50px;
+}
+
 @media (min-width: 992px) {
   .fs-lg-48p {
     font-size: 48px !important;
@@ -17800,8 +17804,8 @@ ul, li, p, a {
 }
 
 .student {
-  left: 228px;
-  bottom: 128px;
+  right: 20px;
+  bottom: 115px;
 }
 
 .swiper-pagination {
@@ -17810,9 +17814,9 @@ ul, li, p, a {
   -webkit-transform: translateX(0) !important;
       -ms-transform: translateX(0) !important;
           transform: translateX(0) !important;
-  -webkit-transform: translateY(-4px) !important;
-      -ms-transform: translateY(-4px) !important;
-          transform: translateY(-4px) !important;
+  -webkit-transform: translateY(4px) !important;
+      -ms-transform: translateY(4px) !important;
+          transform: translateY(4px) !important;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
